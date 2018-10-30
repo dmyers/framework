@@ -5,6 +5,13 @@ namespace Illuminate\Contracts\Auth;
 interface Guard
 {
     /**
+     * Determine if the guard has a user instance.
+     *
+     * @return bool
+     */
+    public function hasUser();
+    
+    /**
      * Determine if the current user is authenticated.
      *
      * @return bool
